@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Dinamik Yaklaşma",
+    "data": {
+      "shot_duration_sec": 3.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "TRUCK",
+        "duration_sec": 2.5,
+        "interpolation": "EASE_OUT",
+        "start_location": [
+          -6.0,
+          -5.0,
+          2.0
+        ],
+        "end_location": [
+          0.0,
+          -5.0,
+          2.0
+        ]
+      },
+      "product_motion": {
+        "motion_type_prod": "POP",
+        "duration_sec": 1.5,
+        "start_offset_sec": 0.2,
+        "pop_overshoot_strength": 1.25
+      }
+    }
+  },
+  {
+    "name": "Sakin Yörünge",
+    "data": {
+      "shot_duration_sec": 6.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "ORBIT",
+        "duration_sec": 6.0,
+        "interpolation": "LINEAR",
+        "orbit_radius": 6.0,
+        "orbit_center": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "product_motion": {
+        "motion_type_prod": "ROTATE",
+        "duration_sec": 6.0,
+        "product_rotation_euler": [
+          0.0,
+          0.261799,
+          6.283185
+        ]
+      }
+    }
+  }
+]
