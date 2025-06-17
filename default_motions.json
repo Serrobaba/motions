@@ -1,56 +1,200 @@
 [
   {
-    "name": "Dinamik Yaklaşma",
-    "data": {
-      "shot_duration_sec": 3.0,
-      "camera_motion": {
-        "look_at": true,
-        "motion_type_cam": "TRUCK",
-        "duration_sec": 2.5,
-        "interpolation": "EASE_OUT",
-        "start_location": [
-          -6.0,
-          -5.0,
-          2.0
-        ],
-        "end_location": [
-          0.0,
-          -5.0,
-          2.0
-        ]
-      },
-      "product_motion": {
-        "motion_type_prod": "POP",
-        "duration_sec": 1.5,
-        "start_offset_sec": 0.2,
-        "pop_overshoot_strength": 1.25
-      }
-    }
-  },
-  {
-    "name": "Sakin Yörünge",
+    "name": "Sükunet Anı",
     "data": {
       "shot_duration_sec": 6.0,
       "camera_motion": {
         "look_at": true,
+        "motion_type_cam": "DOLLY",
+        "duration_sec": 5.0,
+        "start_offset_sec": 0.5,
+        "interpolation": "EASE_OUT",
+        "start_location": [0.0, -8.0, 1.0],
+        "end_location": [0.0, -6.0, 1.0],
+        "enable_arc": false
+      },
+      "product_motion": {
+        "motion_type_prod": "NONE"
+      }
+    }
+  },
+  {
+    "name": "Kozmik Vals",
+    "data": {
+      "shot_duration_sec": 7.0,
+      "camera_motion": {
+        "look_at": true,
         "motion_type_cam": "ORBIT",
-        "duration_sec": 6.0,
+        "duration_sec": 7.0,
+        "start_offset_sec": 0.0,
         "interpolation": "LINEAR",
         "orbit_radius": 6.0,
-        "orbit_center": [
-          0.0,
-          0.0,
-          1.0
-        ]
+        "orbit_center": [0.0, 0.0, 1.0],
+        "enable_secondary_motion": true,
+        "secondary_motion_cam": "ROLL",
+        "secondary_duration_sec": 7.0,
+        "secondary_start_offset_sec": 0.0,
+        "secondary_rotation_amount": 0.1745
       },
       "product_motion": {
         "motion_type_prod": "ROTATE",
-        "duration_sec": 6.0,
-        "product_rotation_euler": [
-          0.0,
-          0.261799,
-          6.283185
-        ]
+        "duration_sec": 7.0,
+        "interpolation": "LINEAR",
+        "product_rotation_euler": [0.0, 0.0, 6.28318]
+      }
+    }
+  },
+  {
+    "name": "Heykeltıraşın Dokunuşu",
+    "data": {
+      "shot_duration_sec": 5.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "NONE"
+      },
+      "product_motion": {
+        "motion_type_prod": "ROTATE",
+        "duration_sec": 4.0,
+        "start_offset_sec": 0.5,
+        "interpolation": "EASE_OUT",
+        "product_rotation_euler": [0.7853, 1.5708, 0.7853]
+      }
+    }
+  },
+  {
+    "name": "Ani Vahiy",
+    "data": {
+      "shot_duration_sec": 2.5,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "DOLLY",
+        "duration_sec": 1.5,
+        "start_offset_sec": 0.0,
+        "interpolation": "BEZIER",
+        "start_location": [0.0, -7.0, 1.0],
+        "end_location": [0.0, -4.0, 1.0],
+        "enable_arc": true
+      },
+      "product_motion": {
+        "motion_type_prod": "POP",
+        "duration_sec": 1.0,
+        "start_offset_sec": 0.2,
+        "pop_overshoot_strength": 1.4,
+        "pop_overshoot_duration_sec": 0.4
+      }
+    }
+  },
+  {
+    "name": "Fısıldayan Yankı",
+    "data": {
+      "shot_duration_sec": 4.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "NONE"
+      },
+      "product_motion": {
+        "motion_type_prod": "SLIDE",
+        "duration_sec": 3.0,
+        "start_offset_sec": 0.5,
+        "interpolation": "EASE_OUT",
+        "start_location": [-4.0, 0.0, 1.0],
+        "end_location": [4.0, 0.0, 1.0],
+        "enable_arc": true
+      }
+    }
+  },
+  {
+    "name": "Yerçekimsiz Duruş",
+    "data": {
+      "shot_duration_sec": 8.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "NONE"
+      },
+      "product_motion": {
+        "motion_type_prod": "FLOAT",
+        "duration_sec": 8.0,
+        "float_range": 0.2,
+        "float_cycles": 3.0
+      }
+    }
+  },
+  {
+    "name": "Odak Kayması",
+    "data": {
+      "shot_duration_sec": 3.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "PEDESTAL",
+        "duration_sec": 2.5,
+        "start_offset_sec": 0.25,
+        "interpolation": "EASE_OUT",
+        "start_location": [0.0, -5.0, -1.0],
+        "end_location": [0.0, -5.0, 3.0]
+      },
+      "product_motion": {
+        "motion_type_prod": "NONE"
+      }
+    }
+  },
+  {
+    "name": "Ritmin Kırılışı",
+    "data": {
+      "shot_duration_sec": 5.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "NONE",
+        "enable_secondary_motion": true,
+        "secondary_motion_cam": "ROLL",
+        "secondary_duration_sec": 0.5,
+        "secondary_start_offset_sec": 2.0,
+        "secondary_interpolation": "BEZIER",
+        "secondary_rotation_amount": 0.2618
+      },
+      "product_motion": {
+        "motion_type_prod": "ROTATE",
+        "duration_sec": 5.0,
+        "interpolation": "LINEAR",
+        "product_rotation_euler": [0.0, 0.0, 6.28318]
+      }
+    }
+  },
+  {
+    "name": "Ufka Süzülüş",
+    "data": {
+      "shot_duration_sec": 4.5,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "NONE"
+      },
+      "product_motion": {
+        "motion_type_prod": "SLIDE",
+        "duration_sec": 3.5,
+        "start_offset_sec": 0.5,
+        "interpolation": "EASE_OUT",
+        "start_location": [0.0, 0.0, 1.0],
+        "end_location": [0.0, -8.0, 1.0]
+      }
+    }
+  },
+  {
+    "name": "Tek Nokta Duruşu",
+    "data": {
+      "shot_duration_sec": 2.0,
+      "camera_motion": {
+        "look_at": true,
+        "motion_type_cam": "DOLLY",
+        "duration_sec": 2.0,
+        "interpolation": "EASE_OUT",
+        "start_location": [0.0, -3.5, 1.0],
+        "end_location": [0.0, -4.0, 1.0]
+      },
+      "product_motion": {
+        "motion_type_prod": "POP",
+        "duration_sec": 0.8,
+        "start_offset_sec": 0.0,
+        "pop_overshoot_strength": 1.1,
+        "pop_overshoot_duration_sec": 0.3
       }
     }
   }
