@@ -89,7 +89,7 @@
     "data": {
       "shot_duration_sec": 4.0,
       "camera_motion": {
-        "look_at": true,
+        "look_at": false,
         "motion_type_cam": "NONE"
       },
       "product_motion": {
@@ -108,7 +108,7 @@
     "data": {
       "shot_duration_sec": 8.0,
       "camera_motion": {
-        "look_at": true,
+        "look_at": false,
         "motion_type_cam": "NONE"
       },
       "product_motion": {
@@ -164,7 +164,7 @@
     "data": {
       "shot_duration_sec": 4.5,
       "camera_motion": {
-        "look_at": true,
+        "look_at": false,
         "motion_type_cam": "NONE"
       },
       "product_motion": {
