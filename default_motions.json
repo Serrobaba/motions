@@ -1,17 +1,74 @@
 [
   {
-    "name": "Sükunet Anı",
+    "name": "İkonik Duruş",
     "data": {
-      "shot_duration_sec": 6.0,
+      "shot_duration_sec": 7.0,
       "camera_motion": {
-        "look_at": true,
         "motion_type_cam": "DOLLY",
-        "duration_sec": 5.0,
-        "start_offset_sec": 0.5,
+        "look_at": true,
+        "duration_sec": 7.0,
+        "start_offset_sec": 0.0,
         "interpolation": "EASE_OUT",
-        "start_location": [0.0, -8.0, 1.0],
-        "end_location": [0.0, -6.0, 1.0],
-        "enable_arc": false
+        "start_location": [0.0, -8.5, 1.0],
+        "end_location": [0.0, -8.0, 1.0],
+        "enable_arc": false,
+        "enable_secondary_motion": false
+      },
+      "product_motion": {
+        "motion_type_prod": "FLOAT",
+        "duration_sec": 7.0,
+        "start_offset_sec": 0.0,
+        "float_range": 0.05,
+        "float_cycles": 1.0,
+        "enable_secondary_motion": false
+      }
+    }
+  },
+  {
+    "name": "Sıfır Yerçekimi Valsi",
+    "data": {
+      "shot_duration_sec": 8.0,
+      "camera_motion": {
+        "motion_type_cam": "TRUCK",
+        "look_at": false,
+        "duration_sec": 8.0,
+        "start_offset_sec": 0.0,
+        "interpolation": "BEZIER",
+        "start_location": [-8.5, 0.0, 1.0],
+        "end_location": [8.5, 0.0, 1.0],
+        "enable_arc": true,
+        "arc_location": [0.0, 6.0, 1.0],
+        "enable_secondary_motion": false
+      },
+      "product_motion": {
+        "motion_type_prod": "ROTATE",
+        "duration_sec": 8.0,
+        "start_offset_sec": 0.0,
+        "interpolation": "LINEAR",
+        "product_rotation_euler": [0.0, 1.5708, 0.0],
+        "enable_secondary_motion": false
+      }
+    }
+  },
+  {
+    "name": "Tekinsiz Yaklaşım",
+    "data": {
+      "shot_duration_sec": 10.0,
+      "camera_motion": {
+        "motion_type_cam": "DOLLY",
+        "look_at": true,
+        "duration_sec": 10.0,
+        "start_offset_sec": 0.0,
+        "interpolation": "BEZIER",
+        "start_location": [0.0, -20.0, 1.0],
+        "end_location": [0.0, -2.5, 1.0],
+        "enable_arc": false,
+        "enable_secondary_motion": true,
+        "secondary_motion_cam": "ROLL",
+        "secondary_duration_sec": 10.0,
+        "secondary_start_offset_sec": 0.0,
+        "secondary_interpolation": "LINEAR",
+        "secondary_rotation_amount": 0.2618
       },
       "product_motion": {
         "motion_type_prod": "NONE"
@@ -19,182 +76,158 @@
     }
   },
   {
-    "name": "Kozmik Vals",
+    "name": "Keskin Vurgu",
     "data": {
-      "shot_duration_sec": 7.0,
+      "shot_duration_sec": 3.5,
       "camera_motion": {
-        "look_at": true,
-        "motion_type_cam": "ORBIT",
-        "duration_sec": 7.0,
+        "motion_type_cam": "PAN",
+        "look_at": false,
+        "duration_sec": 1.0,
         "start_offset_sec": 0.0,
-        "interpolation": "LINEAR",
-        "orbit_radius": 6.0,
-        "orbit_center": [0.0, 0.0, 1.0],
-        "enable_secondary_motion": true,
-        "secondary_motion_cam": "ROLL",
-        "secondary_duration_sec": 7.0,
-        "secondary_start_offset_sec": 0.0,
-        "secondary_rotation_amount": 0.1745
-      },
-      "product_motion": {
-        "motion_type_prod": "ROTATE",
-        "duration_sec": 7.0,
-        "interpolation": "LINEAR",
-        "product_rotation_euler": [0.0, 0.0, 6.28318]
-      }
-    }
-  },
-  {
-    "name": "Heykeltıraşın Dokunuşu",
-    "data": {
-      "shot_duration_sec": 5.0,
-      "camera_motion": {
-        "look_at": true,
-        "motion_type_cam": "NONE"
-      },
-      "product_motion": {
-        "motion_type_prod": "ROTATE",
-        "duration_sec": 4.0,
-        "start_offset_sec": 0.5,
         "interpolation": "EASE_OUT",
-        "product_rotation_euler": [0.7853, 1.5708, 0.7853]
-      }
-    }
-  },
-  {
-    "name": "Ani Vahiy",
-    "data": {
-      "shot_duration_sec": 2.5,
-      "camera_motion": {
-        "look_at": true,
-        "motion_type_cam": "DOLLY",
-        "duration_sec": 1.5,
-        "start_offset_sec": 0.0,
-        "interpolation": "BEZIER",
-        "start_location": [0.0, -7.0, 1.0],
-        "end_location": [0.0, -4.0, 1.0],
-        "enable_arc": true
+        "start_rotation_euler": [0.0, 0.0, -1.0472],
+        "rotation_amount": 1.0472,
+        "enable_secondary_motion": false
       },
       "product_motion": {
         "motion_type_prod": "POP",
-        "duration_sec": 1.0,
-        "start_offset_sec": 0.2,
-        "pop_overshoot_strength": 1.4,
-        "pop_overshoot_duration_sec": 0.4
+        "duration_sec": 1.5,
+        "start_offset_sec": 1.0,
+        "pop_overshoot_strength": 1.3,
+        "pop_overshoot_duration_sec": 0.5,
+        "enable_secondary_motion": false
       }
     }
   },
   {
-    "name": "Fısıldayan Yankı",
+    "name": "Şiirsel Açılış",
     "data": {
       "shot_duration_sec": 4.0,
       "camera_motion": {
-        "look_at": false,
+        "motion_type_cam": "DOLLY",
+        "look_at": true,
+        "duration_sec": 3.0,
+        "start_offset_sec": 0.5,
+        "interpolation": "EASE_OUT",
+        "start_location": [-1.0, -1.0, 1.0],
+        "end_location": [0.0, -8.5, 1.0],
+        "enable_arc": false,
+        "enable_secondary_motion": false
+      },
+      "product_motion": {
+        "motion_type_prod": "ROTATE",
+        "duration_sec": 3.0,
+        "start_offset_sec": 0.5,
+        "interpolation": "EASE_OUT",
+        "product_rotation_euler": [0.7854, 0.7854, 0.0]
+      }
+    }
+  },
+  {
+    "name": "Hipnotik Yörünge",
+    "data": {
+      "shot_duration_sec": 12.0,
+      "camera_motion": {
+        "motion_type_cam": "ORBIT",
+        "look_at": true,
+        "duration_sec": 12.0,
+        "interpolation": "LINEAR",
+        "orbit_radius": 8.5,
+        "orbit_center": [0.0, 0.0, 1.0],
+        "orbit_height": 0.0,
+        "enable_secondary_motion": false
+      },
+      "product_motion": {
+        "motion_type_prod": "ROTATE",
+        "duration_sec": 10.0,
+        "start_offset_sec": 0.0,
+        "interpolation": "LINEAR",
+        "product_rotation_euler": [0.0, 6.2832, 0.0]
+      }
+    }
+  },
+  {
+    "name": "Sessiz Patlama",
+    "data": {
+      "shot_duration_sec": 4.0,
+      "camera_motion": {
         "motion_type_cam": "NONE"
+      },
+      "product_motion": {
+        "motion_type_prod": "POP",
+        "duration_sec": 1.5,
+        "start_offset_sec": 2.0,
+        "interpolation": "BEZIER",
+        "pop_overshoot_strength": 1.5,
+        "pop_overshoot_duration_sec": 0.6
+      }
+    }
+  },
+  {
+    "name": "Kadrajdan Kaçış",
+    "data": {
+      "shot_duration_sec": 5.0,
+      "camera_motion": {
+        "motion_type_cam": "PEDESTAL",
+        "look_at": false,
+        "duration_sec": 5.0,
+        "start_offset_sec": 0.0,
+        "interpolation": "LINEAR",
+        "start_location": [0.0, -8.5, 1.0],
+        "end_location": [0.0, -8.5, 8.0]
       },
       "product_motion": {
         "motion_type_prod": "SLIDE",
         "duration_sec": 3.0,
         "start_offset_sec": 0.5,
         "interpolation": "EASE_OUT",
-        "start_location": [-4.0, 0.0, 1.0],
-        "end_location": [4.0, 0.0, 1.0],
-        "enable_arc": true
+        "start_location": [0.0, 0.0, 1.0],
+        "end_location": [0.0, 0.0, -8.0]
       }
     }
   },
   {
-    "name": "Yerçekimsiz Duruş",
+    "name": "Geometrik Senfoni",
     "data": {
-      "shot_duration_sec": 8.0,
+      "shot_duration_sec": 9.0,
       "camera_motion": {
-        "look_at": false,
-        "motion_type_cam": "NONE"
-      },
-      "product_motion": {
-        "motion_type_prod": "FLOAT",
-        "duration_sec": 8.0,
-        "float_range": 0.2,
-        "float_cycles": 3.0
-      }
-    }
-  },
-  {
-    "name": "Odak Kayması",
-    "data": {
-      "shot_duration_sec": 3.0,
-      "camera_motion": {
+        "motion_type_cam": "DOLLY",
         "look_at": true,
-        "motion_type_cam": "PEDESTAL",
-        "duration_sec": 2.5,
-        "start_offset_sec": 0.25,
-        "interpolation": "EASE_OUT",
-        "start_location": [0.0, -5.0, -1.0],
-        "end_location": [0.0, -5.0, 3.0]
-      },
-      "product_motion": {
-        "motion_type_prod": "NONE"
-      }
-    }
-  },
-  {
-    "name": "Ritmin Kırılışı",
-    "data": {
-      "shot_duration_sec": 5.0,
-      "camera_motion": {
-        "look_at": true,
-        "motion_type_cam": "NONE",
+        "duration_sec": 9.0,
+        "interpolation": "BEZIER",
+        "start_location": [0.0, -12.0, -2.0],
+        "end_location": [0.0, -7.0, 2.0],
+        "enable_arc": true,
+        "arc_location": [-4.0, -9.0, 0.0],
         "enable_secondary_motion": true,
-        "secondary_motion_cam": "ROLL",
-        "secondary_duration_sec": 0.5,
-        "secondary_start_offset_sec": 2.0,
-        "secondary_interpolation": "BEZIER",
-        "secondary_rotation_amount": 0.2618
+        "secondary_motion_cam": "TILT",
+        "secondary_duration_sec": 9.0,
+        "secondary_start_offset_sec": 0.0,
+        "secondary_interpolation": "LINEAR",
+        "secondary_rotation_amount": 0.1745
       },
       "product_motion": {
         "motion_type_prod": "ROTATE",
-        "duration_sec": 5.0,
+        "duration_sec": 9.0,
         "interpolation": "LINEAR",
-        "product_rotation_euler": [0.0, 0.0, 6.28318]
+        "product_rotation_euler": [3.1415, 0.0, 3.1415]
       }
     }
   },
   {
-    "name": "Ufka Süzülüş",
+    "name": "Işıkla Yontulmuş",
     "data": {
-      "shot_duration_sec": 4.5,
+      "shot_duration_sec": 15.0,
       "camera_motion": {
-        "look_at": false,
-        "motion_type_cam": "NONE"
-      },
-      "product_motion": {
-        "motion_type_prod": "SLIDE",
-        "duration_sec": 3.5,
-        "start_offset_sec": 0.5,
-        "interpolation": "EASE_OUT",
-        "start_location": [0.0, 0.0, 1.0],
-        "end_location": [0.0, -8.0, 1.0]
-      }
-    }
-  },
-  {
-    "name": "Tek Nokta Duruşu",
-    "data": {
-      "shot_duration_sec": 2.0,
-      "camera_motion": {
+        "motion_type_cam": "PAN",
         "look_at": true,
-        "motion_type_cam": "DOLLY",
-        "duration_sec": 2.0,
-        "interpolation": "EASE_OUT",
-        "start_location": [0.0, -3.5, 1.0],
-        "end_location": [0.0, -4.0, 1.0]
+        "duration_sec": 15.0,
+        "interpolation": "LINEAR",
+        "start_rotation_euler": [0,0,0],
+        "rotation_amount": 3.1415
       },
       "product_motion": {
-        "motion_type_prod": "POP",
-        "duration_sec": 0.8,
-        "start_offset_sec": 0.0,
-        "pop_overshoot_strength": 1.1,
-        "pop_overshoot_duration_sec": 0.3
+        "motion_type_prod": "NONE"
       }
     }
   }
